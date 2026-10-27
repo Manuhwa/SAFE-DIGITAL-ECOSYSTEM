@@ -1,4 +1,4 @@
-# Safe Digital Ecosystem
+﻿# Safe Digital Ecosystem
 
 A **student harassment reporting system** for Zimbabwean institutions. Students can report anonymously or with their details, via **text** or **audio** (audio is transcribed after submission). The system includes **educational content** on sexual harassment (what it is, effects, Zimbabwean context), **legal aid** references to the **Criminal Law (Codification and Reform) Act** and **Labour Act**, **timestamped reporting**, **cross-reference database**, **severity detection** with **academic accommodation** alerts to admins, and **AI pattern analysis** on report data.
 
@@ -129,11 +129,6 @@ Key performance indicators include increased reporting rates, reduced time to in
    node server/scripts/createAdmin.js admin@your-institution.org YourSecurePassword
    ```
    Or set env vars: `ADMIN_EMAIL` and `ADMIN_PASSWORD`, then run `npm run create-admin`.
-
-   **Temporary demo admin** (development only — change before production):
-   - Username: `mderedzai`
-   - Password: `2026`
-   - Create or reset with: `node server/scripts/createAdmin.js mderedzai 2026`
 
 5. **Production**
    - Build client: `npm run build`
