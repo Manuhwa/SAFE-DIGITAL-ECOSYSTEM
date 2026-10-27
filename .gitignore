@@ -1,0 +1,27 @@
+﻿# Dependencies
+node_modules/
+
+# Builds
+client/dist/
+dist/
+
+# Local database (contains reports and admin accounts)
+server/data/*.db
+server/data/*.db-shm
+server/data/*.db-wal
+*.sqlite
+*.sqlite3
+
+# Uploaded audio and transcripts (private reports)
+server/uploads/**
+!server/uploads/.gitkeep
+
+# Secrets and logs
+.env
+.env.*
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db

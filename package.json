@@ -1,0 +1,27 @@
+{
+  "name": "safe-digital-ecosystem",
+  "version": "1.0.0",
+  "description": "Student harassment reporting system with anonymous/signed reports, education, legal aid, and AI pattern analysis",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "node server/index.js",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js",
+    "init-db": "node server/scripts/initDb.js",
+    "create-admin": "node server/scripts/createAdmin.js",
+    "rebuild:sqlite": "npm rebuild better-sqlite3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.10.0",
+    "cors": "^2.8.5",
+    "docx": "^9.15.0",
+    "express": "^4.21.1",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
